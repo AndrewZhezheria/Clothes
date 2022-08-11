@@ -1,0 +1,18 @@
+@media (max-width: 650px){
+	.moving-decor {
+		display: flex;
+		animation: moveLeft 10s linear infinite;
+		background-color: #63DE86;
+		padding: 20px 0;
+	}
+	
+	.moving-decor span{
+		margin-right: 50px;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 40px;
+		text-align: center;
+		color: #F22E2F;
+	}
+	
+}
