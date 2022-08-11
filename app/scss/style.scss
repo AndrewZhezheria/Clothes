@@ -5,3 +5,20 @@
 @import 'global';
 
 
+.moving-decor {
+	display: flex;
+   animation: moveLeft 30s linear infinite;
+	background-color: #63DE86;
+	padding: 25px 0;
+}
+
+.moving-decor span{
+	margin-right: 115px;
+	font-weight: 700;
+   font-size: 42px;
+   line-height: 52px;
+   text-align: center;
+   color: #F22E2F;
+}
+
+

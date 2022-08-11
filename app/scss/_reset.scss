@@ -50,4 +50,11 @@ select {
 
 a{
   text-decoration: none;
+  color: inherit;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 39px;
+  line-height: 50px;
 }
