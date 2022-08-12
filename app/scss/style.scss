@@ -22,6 +22,50 @@
 }
 
 
+.order {
+   padding: 127px 271px;
+
+	&__text {
+		text-align: center;
+		text-transform: none;
+		font-size: 39px;
+      line-height: 60px;
+		width: 823px;
+		margin: 0 auto;
+		display: block;
+	}
+	&__text span{
+		color:#F3134F;
+		font-size: 26px;
+		line-height: 60px;
+		font-weight: 700;
+	}
+	&__text strong{
+		font-weight: 700;
+		font-size: 39px;
+		line-height: 60px;
+	}
+	&__text em{
+		background-image: linear-gradient(to top,#f67576 50%,#d81b7d00 20%);
+      font-weight: 400;
+      font-size: 39px;
+      line-height: 60px;
+      color: #0D0D0D;
+		text-transform: uppercase;
+		padding-left: 10px;
+		font-style: italic;
+	}
+}
+.clothes-img,
+.idea-img,
+.magic-img,
+.pay-img svg,
+.order-img {
+	max-width: 100%;
+}
+
+
+
 .work {
    padding: 85px 0 45px;
    background-color: #81D3D8;
@@ -43,7 +87,7 @@
 
 	&__item {
 		width: 100%;
-		margin-left: 10px;
+		// margin-left: 10px;
 	}
 
 	&__item-img {
@@ -79,11 +123,11 @@
 }
 
 .slick-prev{
-	padding-left: 18px;
+	padding-left: 5px;
 }
 
 .slick-next{
-   right: 0;
+   right: 11px;
 }
 
 
