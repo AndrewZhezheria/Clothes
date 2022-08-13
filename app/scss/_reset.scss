@@ -36,6 +36,10 @@ ul[class] {
   list-style: none;
 }
 
+nav{
+  list-style: none;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -57,5 +61,6 @@ a{
   font-weight: 700;
   font-size: 39px;
   line-height: 50px;
+  text-transform: uppercase;
 }
 
