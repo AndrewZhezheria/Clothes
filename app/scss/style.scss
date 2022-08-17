@@ -4,106 +4,175 @@
 @import 'libs';
 @import 'global';
 
-.header {
 
-	&__content-icon {
-	}
+.menu-btn{
+	display: none;
+	width: 40px;
+	padding: 0;
+	position: relative;
+	z-index: 30;
+	height: 30px;
+	cursor: pointer;
 }
+
+.menu-btn span{
+	display: block;
+	height: 2px;
+	background-color: #f3134f;
+	position: relative;
+}
+.menu-btn span::before,
+.menu-btn span::after{
+	position: absolute;
+	content: '';
+   width: 40px;
+	height: 2px;
+	background-color: #f3134f;
+	left: 0;
+	
+}
+.menu-btn span::before{
+   top: -10px;
+}
+
+.menu-btn span::after{
+   top: 10px;
+}
+
 .icons {
 
 	&__content-item {
       position: absolute;
 
-
-		&_1 {
+	&_1 {
       bottom: 74px;
 		left: 8%;
-		}
+	}
+	&_1 circle:hover{
+		fill: #0697F2;
+	}
 
-		&_2{
+	&_2{
       left: 18%;
 		bottom: 275px;
-		}
-		&_3{
-			left: 36%;
-			bottom: 56px;
-			}
-	   &_4{
-			right: 35%;
-			bottom: 227px;
-				}
-		&_5{
-			right: 9%;
-			bottom: 470px;
-				}
-		&_6{
-			left: 6%;
-			bottom: 468px;
-				}
-		&_7{
-			left: 11%;
-			bottom: 398px;
-				}
-		&_8{
-			right: 17%;
-			bottom: 56px;
-				}
-	   &_9{
-			right: 7%;
-		   bottom: 95px;
-		   }
-			&_10{
-				right: 8%;
-				bottom: 324px;
-				}
-				&_11{
-					right: 17%;
-					bottom: 437px;
-					}
-					&_12{
-						right: 23%;
-						bottom: 227px;
-						}
-						&_13{
-							left: 11%;
-							bottom: 163px;
-							}
-							&_14{
-								left: 22%;
-								bottom: 104px;
-								}
-								&_15{
-									left: 25%;
-										bottom: 262px;
-									}
-									&_16{
-										// left: -18%;
-										left: -191px;
-                              bottom: 272px;
-										}
-										&_17{
-											left: -105px;
-                                 bottom: 294px;
-											}
-											&_18{
-												right: 0px;
-                                    bottom: -28px;
-												}
-												&_19{
-													right: 0px;
-                                        bottom: -88px;
-
-													}
-
-									
 	}
+	&_3{
+		left: 36%;
+		bottom: 56px;
+	}		
+	&_4{
+		right: 35%;
+		bottom: 227px;
+	}
+	&_5{
+		right: 9%;
+		bottom: 470px;
+	}
+	&_6{
+		left: 6%;
+		bottom: 468px;
+	}
+	&_7{
+		left: 9%;
+		bottom: 398px;
+	}
+	&_8{
+		right: 15%;
+		bottom: 56px;
+	}
+	&_9{
+		right: 7%;
+		bottom: 95px;
+	}
+	&_10{
+		right: 8%;
+		bottom: 324px;
+	}
+	&_11{
+		right: 17%;
+		bottom: 437px;
+	}
+	&_12{
+		right: 23%;
+		bottom: 227px;
+	}
+	&_13{
+		left: 11%;
+		bottom: 163px;
+	}
+	&_14{
+		left: 22%;
+		bottom: 104px;
+	}
+	&_15{
+		left: 25%;
+		bottom: 262px;
+	}
+
+	&_16{
+		left: -191px;
+      bottom: 272px;
+	}
+	&_17{
+		left: -105px;
+      bottom: 294px;
+	}
+	&_18{
+		right: 0px;
+      bottom: -28px;
+	}
+	&_19{
+		right: 0px;
+      bottom: -88px;
+	}
+	&_last {
+		left: 25%;
+		bottom: 444px;
+	}		
+	&_lastright {
+		right: 28%;
+		bottom: 448px;
+	}
+	&_lastright2 {
+		right: 27%;
+		bottom: 103px;
+	}
+}						
+}
+
+.icons__content-item__clothes{
+	animation-name: floating;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+@keyframes icons__content-item__clothes {
+	0% { transform: translate(0,  0px); }
+	50%  { transform: translate(0, -15px); }
+	100%   { transform: translate(0, -0px); }  
+}
+
+.icons__content-item__clothes:hover{
+	animation-play-state: paused;
+}
+
+.icons__content-item__star{
+	animation-name: rotate;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	}
+@keyframes  rotate {
+	0% {transform: rotate(0deg);}
+	50%  {  }
+	100%   { transform: rotate(360deg); }
 }
 
 
 .header {
 
 	&__top {
-		padding: 40px 90px;
+		padding: 25px 90px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -115,6 +184,7 @@
       z-index: 20;
       box-shadow: 0 0 2px 0 rgba(243, 19, 79, 1);
 	}
+
 
 	&__menu {
 		display: flex;
@@ -169,7 +239,7 @@
 		font-size: 16px;
       line-height: 20px;
       color: #F8F1E9;
-      width: 440px;
+      width: 424px;
 		margin-bottom: 97px;
 		margin-left: auto;
 		margin-right: auto;
@@ -194,31 +264,18 @@
 		animation-duration: 3s;
 		animation-iteration-count: infinite;
 		animation-timing-function: ease-in-out;
-  }
+   }
 	
-  @keyframes floating {
+   @keyframes floating {
 		0% { transform: translate(0,  0px); }
 		50%  { transform: translate(0, 15px); }
 		100%   { transform: translate(0, -0px); }   
-  }
-
-	&__btn-link {
-		
-	}
+   }
 	&__btn:hover{
 		color: #F8F1E9;
+		animation-play-state: paused;
 	}
 }
-
-.logo {
-
-	&__img {
-	}
-}
-
-
-
-
 
 .order {
    padding: 127px 20px;
@@ -271,11 +328,6 @@
 .order-img {
 	max-width: 100%;
 }
-
-.pay-img{
-	
-}
-
 
 .work {
    padding: 85px 0 45px;
@@ -607,8 +659,6 @@
 		align-items: center;
 	}
 
-	&__left {
-	}
 
 	&__left-title {
 		font-size: 39px;
@@ -658,9 +708,6 @@
 		color: #F8F1E9;
 	}
 
-	&__right {
-	}
-
 	&__right-title {
 		font-weight: 400;
       font-size: 16px;
@@ -676,16 +723,6 @@
       align-items: center;
 	}
 
-	&__contacts-item {
-	}
-
-	&__contacts-item + &__contacts-item{
-	
-	}
-
-	&__contacts-whatsapp--link {
-	}
-
 	&__contact-img {
 		margin-bottom: 5px;
 		border-radius: 7px;
@@ -698,18 +735,7 @@
       text-align: center;
       color: #F8F1E9;
 	}
-
-	&__contacts-viber--link {
-	}
-
-	&__contacts-telegram--link {
-	}
 }
-
-
-
-
-
 
 
 
